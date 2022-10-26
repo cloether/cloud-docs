@@ -34,13 +34,11 @@
         - Forward to a Destination for Longer Retention
     - Log Analytics Table: `AzureActivity`
 
-
 - Resource Logs
     - Resource-Level Events
     - Provide detailed diagnostic and auditing information for Azure resources
       and the Azure platform they depend on.
     - Are not collected until they're routed to a destination
-
 
 - [Azure Active Directory Logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/overview-reports)
     - Tenant-Level Events
@@ -51,7 +49,6 @@
         - Log Analytics Data Retention: Yes
     - [How-To Integrate Activity Logs with Log Analytics](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
     - [Azure Sentinel - Connect Azure AD Logs](https://learn.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)
-
 
 - Log Destinations
     - Log Analytics
@@ -68,3 +65,4 @@
 
 - [Log Management Fundamentals for Cybersecurity Engineers](https://medium.com/microsoftazure/log-management-fundamentals-for-cybersecurity-engineers-33e433677a0b)
 - [Security Log Management Lifecycle with Microsoft Sentinel](https://medium.com/microsoftazure/security-log-management-lifecycle-with-microsoft-sentinel-2dd8c7d983c)
+- [Highly Effective Azure Monitoring with Azure Log Analytics](https://medium.com/microsoftazure/highly-effective-azure-monitoring-with-azure-log-analytics-ac4810e5dc97)
