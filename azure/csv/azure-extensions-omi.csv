@@ -1,0 +1,13 @@
+Azure Linux VM Extension,Use cases,Uses OMI,Patched for new agent deployments,Supported installation method,Supports automatic extension upgrade,Supports autoUpgradeMinorVersion
+Azure Monitor Agent,"Used to collect telemetry from Windows and Linux virtual machines in Azure, other clouds and on-premises (Arc-enabled VMs). This is meant to replace Log Analytics agent and the diagnostics agent eventually but it is yet to have feature parity",NO,Not needed,Azure VM Extension only,YES,YES
+Azure Disk Encryption for Linux Agent,Used for disk encryption,NO,Not needed,Azure VM Extension only,NO,YES
+Network Watcher Agent for Linux,Used to capture VM network traffic and perform connection troubleshooting,NO,Not needed,Azure VM Extension only,NO,YES
+Custom Script Extension,Used to download and run custom scripts on VMs,NO,Not needed,Azure VM Extension only,YES,YES
+Guest Configuration Extension,Used by Azure Policy to perform audit and configuration operations inside VMs,NO,Not needed,Azure VM Extension only,YES,YES
+Dependency Agent,Used by the Azure monitor map feature to obtain dependency information from running processes,NO,Not needed,Azure VM Extension only,YES,YES
+VM Access Agent,Used to perform administrative tasks like password resets on the VM from the platform,NO,Not needed,Azure VM Extension only,NO,YES
+VMSnapshot,Used for backing up to Recovery Services vault,NO,Not needed,Azure VM Extension only,NO,YES
+KeyVaultForLinux Extension,Used to provides automatic refresh of certificates stored in an Azure key vault,NO,Not needed,Azure VM Extension only,YES,
+Linux Diagnostics Agent,Used to collect monitoring data from VMs to a storage account,YES,NO,Azure VM Extension only,NO,YES
+Log Analytics Agent,"Used used to collect telemetry from Windows and Linux virtual machines in Azure, other clouds, on-premises machines. This agent is also used by other Azure services to perform their functionalities. For example, if you have implemented the following Azure services, the MMA agent will also installed be installed on your systems - Azure Monitor insights (mainly VM insights), Azure Security Center defender, Azure Automation (Change tracking and Update Management features), Azure Sentinel",YES,YES,Azure VM Extension and Manual Installation,NO,YES
+DSCForLinux Agent,Used by Azure Automation for configuration management,YES,YES,Azure VM Extension only,NO,YES

@@ -42,7 +42,7 @@
 
 - [Azure Active Directory Logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/overview-reports)
     - Tenant-Level Events
-    - Automatically Collected/Generated
+    - Automatically Collected/Generated: Yes
     - Cost
         - Sending to Log Analytics: No
         - Log Analytics Data Ingestion: Yes
@@ -64,5 +64,12 @@
 ##### References
 
 - [Log Management Fundamentals for Cybersecurity Engineers](https://medium.com/microsoftazure/log-management-fundamentals-for-cybersecurity-engineers-33e433677a0b)
-- [Security Log Management Lifecycle with Microsoft Sentinel](https://medium.com/microsoftazure/security-log-management-lifecycle-with-microsoft-sentinel-2dd8c7d983c)
 - [Highly Effective Azure Monitoring with Azure Log Analytics](https://medium.com/microsoftazure/highly-effective-azure-monitoring-with-azure-log-analytics-ac4810e5dc97)
+- [Microsoft Cybersecurity Reference Architectures](https://learn.microsoft.com/en-us/security/cybersecurity-reference-architecture/mcra)
+
+- [Understanding Azure Logs from a security perspective — Part 1 — Activity Logs](https://davidokeyode.medium.com/understanding-azure-logs-part-1-activity-logs-e5483c7b8a46)
+- [Understanding Azure Logs from a security perspective — Part 2 — NSG Flow Logs](https://davidokeyode.medium.com/understanding-azure-logs-from-a-security-perspective-part-2-nsg-flow-logs-3edc5c42f39a)
+- [Log Management Fundamentals for Cybersecurity Engineers](https://medium.com/microsoftazure/log-management-fundamentals-for-cybersecurity-engineers-33e433677a0b)
+- [Security Log Management Lifecycle with Microsoft Sentinel](https://medium.com/microsoftazure/security-log-management-lifecycle-with-microsoft-sentinel-2dd8c7d983c)
+- [Incident Case Management on Sentinel — Syncing status between different solutions](https://medium.com/microsoftazure/incident-case-management-on-sentinel-syncing-status-between-different-solutions-bc7a8076669e?source=collection_home---4------1-----------------------)
+
