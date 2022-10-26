@@ -63,3 +63,8 @@
           Mechanism: [Lifecycle Management Policy](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal)
     - Event Hub
     - Partner Integrations
+
+##### References
+
+- [Log Management Fundamentals for Cybersecurity Engineers](https://medium.com/microsoftazure/log-management-fundamentals-for-cybersecurity-engineers-33e433677a0b)
+- [Security Log Management Lifecycle with Microsoft Sentinel](https://medium.com/microsoftazure/security-log-management-lifecycle-with-microsoft-sentinel-2dd8c7d983c)
