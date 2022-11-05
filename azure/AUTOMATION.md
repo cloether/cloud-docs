@@ -12,6 +12,8 @@
     - Restrict Code Execution
     - Running Anti-Virus Scan
     - Stop Service
+
+
 - Targets
     - Device
     - Device File
@@ -23,6 +25,8 @@
     - Soft-Deleting Email Messages
     - Blocking URLs
     - Turning Off External Mail Forwarding
+
+
 - Targets
     - message
     - message attachment
