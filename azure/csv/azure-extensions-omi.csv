@@ -1,4 +1,4 @@
-Azure Linux VM Extension,Use cases,Uses OMI,Patched for new agent deployments,Supported installation method,Supports automatic extension upgrade,Supports autoUpgradeMinorVersion
+Azure Linux VM Extension,Use Cases,Uses OMI,Patched for New Agent Deployments,Supported Installation Method,Supports automatic extension upgrade,Supports AutoUpgradeMinorVersion
 Azure Monitor Agent,"Used to collect telemetry from Windows and Linux virtual machines in Azure, other clouds and on-premises (Arc-enabled VMs). This is meant to replace Log Analytics agent and the diagnostics agent eventually but it is yet to have feature parity",NO,Not needed,Azure VM Extension only,YES,YES
 Azure Disk Encryption for Linux Agent,Used for disk encryption,NO,Not needed,Azure VM Extension only,NO,YES
 Network Watcher Agent for Linux,Used to capture VM network traffic and perform connection troubleshooting,NO,Not needed,Azure VM Extension only,NO,YES
