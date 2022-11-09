@@ -36,10 +36,6 @@ Cloud Documentation and Notes Repository
 
 <hr>
 
-- Scripts
-
-<hr>
-
 - [Terraform](./terraform/README.md)
 
 <hr>
