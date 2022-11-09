@@ -75,7 +75,7 @@ def main():
   """
   import os
 
-  _SCRIPT_DIR = os.getcwd()
+  _SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
   _ROOT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
   _EXCLUSIONS = ("venv", os.path.basename(_SCRIPT_DIR))
 
