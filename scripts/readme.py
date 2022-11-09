@@ -157,9 +157,9 @@ def main():
       fd.write("- {0}\n\n".format(section.get("link", section["name"])))
 
       for topic in section["topics"]:
-        fd.write("    - {0}\n\n".format(topic))
+        fd.write("    - {0}\n".format(topic))
 
-      fd.write("<hr>\n\n")
+      fd.write("\n<hr>\n\n")
   return 0
 
 
