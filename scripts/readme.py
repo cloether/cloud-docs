@@ -147,7 +147,7 @@ def main():
 
   results.sort(key=_get_name)
 
-  with open(_root_dir_join("TOC.md"), "w+") as fd:
+  with open(_root_dir_join("README.md"), "w+") as fd:
     fd.write("# Cloud Docs\n\n")
 
     fd.write("Cloud Documentation and Notes Repository\n\n")
