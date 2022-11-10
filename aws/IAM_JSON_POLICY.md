@@ -36,13 +36,13 @@ policies (aka Trust Relationships).
 Permission boundaries create a logical boundary around the permissions that can
 be defined for an IAM Entity (User or Role) to explicitly allow a maximum set of
 permissions. Permission boundaries are a great way to implement the principle of
-least privilege to ensure that an IAM Entity never has more privileges than are
-necessary to perform their job function. Permission boundaries don't grant
-permissions so you still need to use identity or resource policies to grant
+the least privilege to ensure that an IAM Entity never has more privileges than
+are necessary to perform their job function. Permission boundaries don't grant
+permissions, so you still need to use identity or resource policies to grant
 access.
 
-See
-my [permission boundaries](https://medium.com/geekculture/aws-iam-permissions-boundaries-781ca8c8e9c0)
+See my
+[permission boundaries](https://medium.com/geekculture/aws-iam-permissions-boundaries-781ca8c8e9c0)
 Medium post for more info.
 
 ##### Service Control Policy (SCP)
@@ -51,8 +51,7 @@ AWS Organizations not only allows you to divide your organization into logical
 business units and manage AWS billing across many AWS accounts, it also enables
 you to set permissions across your AWS accounts using service control policies
 (SCPs). SCPs act as **guardrails** for your AWS accounts and thus have a
-similiar
-role to a permission boundary or session policy in that they only set
+similar role to a permission boundary or session policy in that they only set
 permissions limits but don’t explicitly grant permissions - permissions are
 still granted via identity-based or resourced-based policies.
 
