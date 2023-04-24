@@ -123,8 +123,8 @@ def main():
 
     for filename in os.listdir(dirpath):
       filepath = os.path.join(dirpath, filename)
-
       file_basename, file_ext = os.path.splitext(filename)
+
       if file_ext.lower() != ".md":
         LOGGER.debug("skipping non-markdown file: %s", file_ext)
         continue
@@ -135,11 +135,9 @@ def main():
 
       section_topic_title = _split_join_title(file_basename, "_")
       section_topic_link = _markdown_file_ref(section_topic_title, filepath)
-
       section_topic_links.append(section_topic_link)
 
     section_topic_links.sort()
-
     results.append(section)
 
   def _get_name(obj):
@@ -149,16 +147,12 @@ def main():
 
   with open(_root_dir_join("README.md"), "w+") as fd:
     fd.write("# Cloud Docs\n\n")
-
     fd.write("Cloud Documentation and Notes Repository\n\n")
     fd.write("<hr>\n\n")
-
     for section in results:
       fd.write("- {0}\n\n".format(section.get("link", section["name"])))
-
       for topic in section["topics"]:
         fd.write("    - {0}\n".format(topic))
-
       fd.write("\n<hr>\n\n")
   return 0
 

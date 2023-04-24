@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {},
+  "parameters": {
+    "workspaceName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name for the Log Analytics workspace"
+      }
+    },
+    "vmName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name for Virtual Machine to Deploy the Azure Monitor Agent to."
+      }
+    },
+    "location": {
+      "defaultValue": "[resourceGroup().location]",
+      "type": "string",
+      "metadata": {
+        "description": "Location for all resources."
+      }
+    }
+  },
+  "functions": [],
+  "variables": {
+    "VmIdentityName": "mi_res_id",
+    "VmAgentDeploymentName": "[format('{0}/AzureMonitorLinuxAgent', parameters('vmName'))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "name": "[variables('VMIdentityName')]",
+      "apiVersion": "2018-11-30",
+      "location": "[resourceGroup().location]"
+    },
+    {
+      "name": "vmExtensionAzureMonitorAgent",
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2021-04-01",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "relativePath": "vm-extension/deploy.linux.extension.json"
+        }
+      },
+      "dependsOn": [
+        "[variables('VMIdentityName')]"
+      ]
+    }
+  ],
+  "outputs": {}
+}

@@ -1,0 +1,21 @@
+{
+  "type": "Microsoft.Compute/virtualMachines/extensions",
+  "apiVersion": "2021-11-01",
+  "name": "[format('{0}/AzureMonitorLinuxAgent', parameters('vmName'))]",
+  "location": "[parameters('location')]",
+  "properties": {
+    "publisher": "Microsoft.Azure.Monitor",
+    "type": "AzureMonitorLinuxAgent",
+    "typeHandlerVersion": "1.21",
+    "settings": {
+      "authentication": {
+        "managedIdentity": {
+          "identifier-name": "mi_res_id",
+          "identifier-value": "[parameters('userAssignedManagedIdentity')]"
+        }
+      }
+    },
+    "autoUpgradeMinorVersion": true,
+    "enableAutomaticUpgrade": true
+  }
+}
